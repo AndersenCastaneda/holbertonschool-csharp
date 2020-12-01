@@ -6,7 +6,11 @@ class Program
     {
         Random rndm = new Random();
         int number = rndm.Next(-10, 10);
-        Console.WriteLine((number > 0) ? $"{number} is positive" :
-            (number == 0) ? $"{number} is zero" : $"{number} is negative");
+        if (number > 0)
+            Console.WriteLine("{0} is positive", number);
+        else if (number == 0)
+            Console.WriteLine("{0} is zero", number);
+        else
+            Console.WriteLine("{0} is negative", number);
     }
 }
