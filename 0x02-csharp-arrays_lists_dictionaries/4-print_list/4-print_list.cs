@@ -13,6 +13,8 @@ class List
             return null;
         }
 
+        if (size == 0)
+            Console.WriteLine();
 
         for (int i = 0; i < size; i++)
         {
