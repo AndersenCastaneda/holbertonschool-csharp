@@ -11,7 +11,6 @@ class Matrix
         if (myMatrix == null || height == 0 || width == 0)
             return myMatrix;
 
-
         newMatrix = new int[height, width];
         for (int i = 0; i < height; i++)
         {
