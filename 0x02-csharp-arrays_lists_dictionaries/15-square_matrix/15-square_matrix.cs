@@ -4,13 +4,13 @@ class Matrix
 {
     public static int[,] Square(int[,] myMatrix)
     {
-        int[,] newMatrix = new int[,] { };
-
-        if (myMatrix == null || myMatrix.Length == 0)
-            return newMatrix;
-
+        int[,] newMatrix;
         int height = myMatrix.GetLength(0);
         int width = myMatrix.GetLength(1);
+
+        if (myMatrix == null || height == 0 || width == 0)
+            return myMatrix;
+
 
         newMatrix = new int[height, width];
         for (int i = 0; i < height; i++)
