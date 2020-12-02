@@ -12,7 +12,6 @@ class Program
             new int[] {0, 1 },
         };
 
-
         for (int i = 0; i < height; i++)
         {
             width = jaggedArray[i].Length;
