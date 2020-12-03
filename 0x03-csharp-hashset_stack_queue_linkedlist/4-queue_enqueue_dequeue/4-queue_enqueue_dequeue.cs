@@ -14,7 +14,7 @@ class MyQueue
         if (newItem != null)
             aQueue.Enqueue(newItem);
 
-        Console.WriteLine($"Stack contains \"{search}\": {aQueue.Contains(search)}");
+        Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
         while (aQueue.Contains(search))
             aQueue.Dequeue();
 
