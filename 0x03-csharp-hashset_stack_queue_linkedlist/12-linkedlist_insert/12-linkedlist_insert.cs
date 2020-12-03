@@ -16,14 +16,12 @@ class LList
             if (node.Value > n)
             {
                 myLList.AddBefore(node, n);
-                node = node.Previous;
-                return node;
+                return node.Previous;
             }
             node = node.Next;
         }
 
         myLList.AddLast(n);
-
         return myLList.Last;
     }
 }
