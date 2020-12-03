@@ -17,7 +17,7 @@ class LList
             {
                 myLList.AddBefore(node, n);
                 node = node.Previous;
-                break;
+                return node;
             }
             node = node.Next;
         }
