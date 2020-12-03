@@ -8,19 +8,16 @@ class MyStack
         if (aStack == null)
             aStack = new Stack<string>();
 
-        int count = aStack.Count;
-        Console.WriteLine($"Number of items: {count}");
-        Console.WriteLine((count == 0) ? "Stack is empty" : $"Top item: {aStack.Peek()}");
-
+        Console.WriteLine($"Number of items: {aStack.Count}");
+        Console.WriteLine((aStack.Count == 0) ? "Stack is empty" : $"Top item: {aStack.Peek()}");
         Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
-        bool isRemoved = false;        
-        while (!isRemoved)
-        {
-            isRemoved = (aStack.Peek() == search);
-            aStack.Pop();
-        }
 
-        aStack.Push(newItem);
+        while (aStack.Contains(search))
+            aStack.Pop();
+
+        if (newItem != null)
+            aStack.Push(newItem);
+
         return aStack;
     }
 }
