@@ -5,20 +5,16 @@ class List
 {
     public static List<int> CommonElements(List<int> list1, List<int> list2)
     {
-        int length1 = list1.Count;
-        int length2 = list2.Count;
         List<int> newList = new List<int>();
 
-        if (list1 == null || length1 == 0 || list2 == null || length2 == 0)
+        if (list1 == null || list2 == null)
             return newList;
 
-        for (int i = 0; i < length1; i++)
+        list1.Sort();
+        foreach (var item in list1)
         {
-            for (int j = 0; j < length2; j++)
-            {
-                if (list1[i] == list2[j])
-                    newList.Add(list1[i]);
-            }
+            if (list2.Contains(item))
+                newList.Add(item);
         }
 
         return newList;
