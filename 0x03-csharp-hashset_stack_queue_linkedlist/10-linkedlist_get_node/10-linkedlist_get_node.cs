@@ -7,7 +7,7 @@ class LList
     {
         int length = myLList.Count;
 
-        if (myLList == null || n >= length)
+        if (myLList == null || n >= length || n < 0)
             return 0;
 
         LinkedListNode<int> node = myLList.First;
