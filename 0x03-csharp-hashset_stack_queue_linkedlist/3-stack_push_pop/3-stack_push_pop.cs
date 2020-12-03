@@ -6,7 +6,7 @@ class MyStack
     public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
     {
         if (aStack == null)
-            return aStack;
+            aStack = new Stack<string>();
 
         int count = aStack.Count;
         Console.WriteLine($"Number of items: {count}");
