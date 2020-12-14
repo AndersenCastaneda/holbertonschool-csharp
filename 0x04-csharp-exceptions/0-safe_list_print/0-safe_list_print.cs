@@ -15,7 +15,7 @@ class List
                 count++;
             }
         }
-        catch (System.Exception)
+        catch (IndexOutOfRangeException)
         {
             return count;
         }
