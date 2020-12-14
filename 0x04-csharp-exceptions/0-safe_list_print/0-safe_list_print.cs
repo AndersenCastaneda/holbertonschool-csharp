@@ -5,21 +5,18 @@ class List
 {
     public static int SafePrint(List<int> myList, int n)
     {
-        int count = 0;
+        int i = 0;
 
         try
         {
-            for (int i = 0; i < n; i++)
-            {
+            for (; i < n; i++)
                 Console.WriteLine(myList[i]);
-                count++;
-            }
         }
-        catch (IndexOutOfRangeException)
+        catch (Exception)
         {
-            return count;
+            return i;
         }
 
-        return count;
+        return i;
     }
 }
