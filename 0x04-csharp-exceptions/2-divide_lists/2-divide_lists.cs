@@ -8,24 +8,22 @@ class List
         int i = 0;
         List<int> div = new List<int>();
 
-        try
+        for (; i < listLength; i++)
         {
-            for (; i < listLength; i++)
+            try
             {
-                if (list2[i] == 0)
-                {
-                    Console.WriteLine("Cannot divide by zero");
-                    div.Add(0);
-                }
-                else
-                    div.Add(list1[i] / list2[i]);
+                div.Add(list1[i] / list2[i]);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero");
+                div.Add(0);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                Console.WriteLine("Out of range");
             }
         }
-        catch (System.Exception)
-        {
-            Console.WriteLine("Out of range");
-        }
-
         return div;
     }
 }
