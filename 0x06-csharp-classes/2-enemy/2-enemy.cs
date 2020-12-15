@@ -2,15 +2,28 @@
 
 namespace Enemies
 {
+    /// <summary>
+    /// Class Zombie
+    /// </summary>
     public class Zombie
     {
+        /// <summary>
+        /// Zombie's health
+        /// </summary>
         public int health;
 
+        /// <summary>
+        /// Creates a new Zombie and sets health to 0
+        /// </summary>
         public Zombie()
         {
             this.health = 0;
         }
 
+        /// <summary>
+        /// Creates a new Zombie and sets health to value
+        /// </summary>
+        /// <param name="value">Value must be >= 0</param>
         public Zombie(int value)
         {
             if (value < 0)

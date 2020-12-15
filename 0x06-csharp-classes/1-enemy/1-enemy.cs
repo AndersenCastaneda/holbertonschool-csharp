@@ -6,7 +6,7 @@
     public class Zombie
     {
         /// <summary>
-        /// Zombie health
+        /// Zombie's health
         /// </summary>
         public int health;
 
