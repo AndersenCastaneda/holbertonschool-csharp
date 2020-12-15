@@ -1,9 +1,6 @@
-﻿using System;
-
-namespace Enemies
+﻿namespace Enemies
 {
     public class Zombie
     {
-        
     }
 }
