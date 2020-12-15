@@ -63,6 +63,6 @@ namespace Enemies
         /// String representation of Zombie object
         /// </summary>
         /// <returns>Returns Zombie name: Zombie's name/ Total helath: Zombies'health</returns>
-        public override string ToString() => $"Zombie name: {name} / Total Health: {health}";
+        public override string ToString() => $"Zombie Name: {name} / Total Health: {health}";
     }
 }
