@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace MyMath
 {
@@ -20,10 +19,11 @@ namespace MyMath
 
             int length = nums.Count;
             int max = nums[0];
-
-            for (int i = 0; i < length; i++)
+            for (int i = 1; i < length; i++)
+            {
                 if (nums[i] > max)
                     max = nums[i];
+            }
 
             return max;
         }

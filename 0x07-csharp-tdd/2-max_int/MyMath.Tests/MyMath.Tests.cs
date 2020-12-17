@@ -26,5 +26,12 @@ namespace Tests
             List<int> myList = new List<int> { -12, -43, -32, -17, -21, -39, -44, -65, -4 };
             Assert.AreEqual(-4, Operations.Max(myList));
         }
+
+        [Test]
+        public void Operations_Max_get_0()
+        {
+            List<int> myList = new List<int>();
+            Assert.AreEqual(0, Operations.Max(myList));
+        }
     }
 }
