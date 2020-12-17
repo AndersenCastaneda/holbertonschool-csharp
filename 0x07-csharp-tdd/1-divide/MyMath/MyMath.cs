@@ -31,15 +31,7 @@ namespace MyMath
             for (int i = 0; i < width; i++)
             {
                 for (int j = 0; j < height; j++)
-                {
-                    try
-                    {
-                        res[i, j] = matrix[i, j] / 2;
-                    }
-                    catch (Exception)
-                    {
-                    }
-                }
+                    res[i, j] = matrix[i, j] / num;
             }
 
             return res;
