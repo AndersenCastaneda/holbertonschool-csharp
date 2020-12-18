@@ -33,5 +33,12 @@ namespace Tests
             List<int> myList = new List<int>();
             Assert.AreEqual(0, Operations.Max(myList));
         }
+
+        [Test]
+        public void Operations_Max_get_0_from_null_list()
+        {
+            List<int> myList = new List<int>();
+            Assert.AreEqual(0, Operations.Max(null));
+        }
     }
 }
