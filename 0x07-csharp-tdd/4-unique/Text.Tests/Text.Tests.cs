@@ -28,5 +28,11 @@ namespace Tests
         {
             Assert.AreEqual(11, Str.UniqueChar("abccdadbgagz"));
         }
+
+        [Test]
+        public void Str_UniqueChar_empty_string()
+        {
+            Assert.AreEqual(-1, Str.UniqueChar(""));
+        }
     }
 }
