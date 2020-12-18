@@ -29,7 +29,7 @@ namespace Tests
 
         public void Test_Str_Three_Word()
         {
-            Assert.AreEqual(2, Str.CamelCase("helloWorld!Finally "));
+            Assert.AreEqual(3, Str.CamelCase("helloWorld!Finally "));
         }
     }
 }
