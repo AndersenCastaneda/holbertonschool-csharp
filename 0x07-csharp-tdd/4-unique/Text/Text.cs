@@ -15,7 +15,7 @@ namespace Text
         public static int UniqueChar(string s)
         {
             if (s.Length == 0)
-                return 1;
+                return -1;
 
             int length = s.Length;
             bool isRepeated;
