@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Text
 {
@@ -14,14 +15,18 @@ namespace Text
         /// <returns>true or false</returns>
         public static bool IsPalindrome(string s)
         {
-            if (s == null || s.Length == 0)
-                return false;
+            if (s.Length == 0)
+                return true;
 
-            for (int i = 0, j = s.Length - 1; i < j; i++, j--)
-            {
-                if (s[i] != s[j])
+            string str = "";
+            for (int i = 0; i < s.Length; i++)
+                if (s[i] >= 'A' && s[i] <= 'Z' || s[i] >= 'a' && s[i] <= 'z')
+                    str += s[i];
+
+            str = str.ToLower();
+            for (int i = 0, j = str.Length - 1; i < j; i++, j--)
+                if (str[i] != str[j])
                     return false;
-            }
 
             return true;
         }

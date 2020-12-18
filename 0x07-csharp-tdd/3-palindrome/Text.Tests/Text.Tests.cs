@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Text;
+using System;
 
 namespace Tests
 {
@@ -24,9 +25,21 @@ namespace Tests
         }
 
         [Test]
-        public void Str_IsPalindrome_Desserts_I_stressed()
+        public void Str_IsPalindrome_Long_text()
         {
-            Assert.IsFalse(Str.IsPalindrome("Desserts, I stressed!"));
+            Assert.IsTrue(Str.IsPalindrome("A man, a plan, a canal: Panama."));
+        }
+
+        [Test]
+        public void Str_IsPalindrome_empty_string()
+        {
+            Assert.IsTrue(Str.IsPalindrome(""));
+        }
+
+        [Test]
+        public void Str_IsPalindrome_Racecar()
+        {
+            Assert.IsTrue(Str.IsPalindrome("Racecar"));
         }
     }
 }
