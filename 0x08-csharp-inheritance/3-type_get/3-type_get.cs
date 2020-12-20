@@ -8,9 +8,9 @@ using System.Reflection;
 public class Obj
 {
     /// <summary>
-    /// 
+    /// Print Properties and Methods from an Object
     /// </summary>
-    /// <param name="myObj"></param>
+    /// <param name="myObj">Object</param>
     public static void Print(object myObj)
     {
         var t = myObj.GetType().GetTypeInfo();
