@@ -64,7 +64,7 @@ public class Rectangle : Shape
     /// <summary>
     /// String Representation of Rectangle
     /// </summary>
-    public override string ToString() => $"[Rectangle] {width} / {height}";
+    public override string ToString() => $"[{this.GetType()}] {width} / {height}";
 }
 
 /// <summary>
