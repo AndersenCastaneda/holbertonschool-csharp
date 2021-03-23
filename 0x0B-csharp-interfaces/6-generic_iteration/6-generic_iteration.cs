@@ -195,8 +195,8 @@ public class Objs<T> : IEnumerable<T>
     /// <summary>
     /// Add class to list of objects
     /// </summary>
-    /// <param name="cls"></param>
-    public void Add(T cls) => objs.Add(cls);
+    /// <param name="obj">Object</param>
+    public void Add(T obj) => objs.Add(obj);
 
     /// <summary>
     /// GetEnumerator function
